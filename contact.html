@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About &amp; Contact — FIELDWORK</title>
+<meta name="description" content="Learn the FIELDWORK story, visit a storefront, or get in touch with our team. Follow along on Instagram, TikTok, Pinterest, Facebook and X.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-row wrap">
+    <a href="index.html" class="logo">FIELD<span>WORK</span></a>
+    <nav class="main-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="contact.html" aria-current="page">About &amp; Contact</a>
+    </nav>
+    <div class="header-actions">
+      <span aria-label="Items in bag" style="display:flex; align-items:center; gap:8px; font-family:'JetBrains Mono',monospace; font-size:0.8rem;">
+        BAG <span class="bag-count">0</span>
+      </span>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section style="padding-bottom:0;">
+  <div class="wrap">
+    <div class="eyebrow">About FIELDWORK</div>
+    <h1 style="font-size:clamp(2rem,4vw,3rem); margin-bottom:10px;">A workshop first, a shop second.</h1>
+    <p style="max-width:60ch; color:#3a382f;">Everything we make still gets cut, sewn and tested three blocks from where we started.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <div>
+      <h2>How it started</h2>
+      <p>FIELDWORK opened in 2014 as a one-room repair counter behind a hardware store, patching work jackets that ripped faster than the job allowed. Customers started asking us to build the jacket right the first time — so we did. Twelve years on, the same principle runs the whole company: cut for movement, reinforce the stress points, and stand behind every seam.</p>
+      <p>We still cut and sew everything in-house, in small batches, and every garment ships with a repair card. Wear it out, send it back, we'll fix it.</p>
+    </div>
+    <img src="https://picsum.photos/seed/fieldwork-team/700/525" alt="FIELDWORK sewing team at work in the shop">
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Visit us</div>
+        <h2>Two storefronts, open all week</h2>
+      </div>
+    </div>
+    <div class="two-col-info">
+      <div class="info-card">
+        <h3>Riverside Flagship</h3>
+        <p class="mono" style="font-size:0.9rem; color:#4a483f;">214 Foundry Street<br>Riverside District<br>Open daily 10:00–19:00</p>
+        <p style="margin-top:12px;">Full size run, repair counter on-site, and the only place to see fabric in person before it's cut.</p>
+      </div>
+      <div class="info-card">
+        <h3>Harbor Mill Outlet</h3>
+        <p class="mono" style="font-size:0.9rem; color:#4a483f;">88 Millwright Lane<br>Harbor District<br>Open Tue–Sun 11:00–18:00</p>
+        <p style="margin-top:12px;">Past-season colorways and seconds at reduced prices. Repairs accepted, drop-off only.</p>
+      </div>
+    </div>
+    <div class="map-block" style="margin-top:24px;">
+      Map embed placeholder — drop in your Google Maps / OpenStreetMap iframe here
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Get in touch</div>
+        <h2>Send us a message</h2>
+      </div>
+    </div>
+    <div class="form-success" role="status">Thanks — your message is in. We reply within one business day.</div>
+    <form id="contact-form" class="form-grid" novalidate>
+      <div>
+        <label for="cf-name">Name</label>
+        <input id="cf-name" name="name" type="text" required>
+      </div>
+      <div>
+        <label for="cf-email">Email</label>
+        <input id="cf-email" name="email" type="email" required>
+      </div>
+      <div class="full">
+        <label for="cf-subject">Subject</label>
+        <select id="cf-subject" name="subject">
+          <option>Order question</option>
+          <option>Sizing help</option>
+          <option>Repair request</option>
+          <option>Wholesale inquiry</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div class="full">
+        <label for="cf-message">Message</label>
+        <textarea id="cf-message" name="message" required></textarea>
+      </div>
+      <div class="full">
+        <button type="submit" class="btn btn-solid">Send message</button>
+        <p class="form-note">This form is a visual demo — connect it to your email service or a form backend (e.g. Formspree) to receive submissions.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Before you ask</div>
+        <h2>Frequently asked</h2>
+      </div>
+    </div>
+    <div>
+      <details class="faq" open>
+        <summary>How does the 40-year stitch warranty work?</summary>
+        <p>If a seam fails from normal wear, send the garment back with your order number. We repair it free of charge; you only cover return shipping.</p>
+      </details>
+      <details class="faq">
+        <summary>What's your sizing like?</summary>
+        <p>Outerwear and workwear run true to size with room for a mid-layer. Full measurements are listed on every product page — when between sizes, we recommend sizing up.</p>
+      </details>
+      <details class="faq">
+        <summary>How long does shipping take?</summary>
+        <p>Orders ship within two business days. Standard delivery takes 3–6 business days; expedited options are available at checkout.</p>
+      </details>
+      <details class="faq">
+        <summary>Do you accept returns?</summary>
+        <p>Unworn items in original condition can be returned within 30 days for a full refund. Repairs follow the stitch warranty terms above instead.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="social-heading" style="border-bottom:none;">
+  <div class="wrap" style="text-align:center;">
+    <div class="eyebrow" style="justify-content:center;">Follow the shop floor</div>
+    <h2 id="social-heading" style="max-width:26ch; margin:0 auto 18px;">New cuts, restocks and behind-the-scenes — wherever you already scroll</h2>
+    <p style="max-width:52ch; margin:0 auto 32px; color:#3a382f;">Follow FIELDWORK for early looks at fabric drops, repair-counter stories and the occasional discount code.</p>
+    <!-- Social links: swap in real handles and add UTM parameters (e.g. ?utm_source=instagram&utm_medium=bio) for ad/campaign targeting -->
+    <div class="social-row" style="justify-content:center;">
+      <a class="social-btn" href="https://instagram.com/fieldwork" target="_blank" rel="noopener" aria-label="Instagram" style="width:52px; height:52px;">
+        <svg viewBox="0 0 24 24" style="width:22px; height:22px;"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.25.06 2.1.25 2.85.55.77.3 1.42.7 2.06 1.34.64.64 1.04 1.29 1.34 2.06.3.75.49 1.6.55 2.85.07 1.25.07 1.65.07 4.85s0 3.6-.07 4.85c-.06 1.25-.25 2.1-.55 2.85-.3.77-.7 1.42-1.34 2.06a5.5 5.5 0 0 1-2.06 1.34c-.75.3-1.6.49-2.85.55-1.25.07-1.65.07-4.85.07s-3.6 0-4.85-.07c-1.25-.06-2.1-.25-2.85-.55a5.5 5.5 0 0 1-2.06-1.34 5.5 5.5 0 0 1-1.34-2.06c-.3-.75-.49-1.6-.55-2.85C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.85c.06-1.25.25-2.1.55-2.85.3-.77.7-1.42 1.34-2.06A5.5 5.5 0 0 1 6.22 .9c.75-.3 1.6-.49 2.85-.55C10.32 2.2 10.8 2.2 12 2.2Zm0 1.8c-3.15 0-3.52 0-4.76.07-1.02.05-1.58.22-1.95.36-.49.19-.84.42-1.2.79-.37.36-.6.71-.79 1.2-.14.37-.31.93-.36 1.95C2.87 9.61 2.87 9.98 2.87 13.13m0 0V12m9.13-6.8a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 1.8a3.2 3.2 0 1 1 0 6.4 3.2 3.2 0 0 1 0-6.4Zm5.2-1.98a1.17 1.17 0 1 1 0 2.34 1.17 1.17 0 0 1 0-2.34Z"/></svg>
+      </a>
+      <a class="social-btn" href="https://tiktok.com/@fieldwork" target="_blank" rel="noopener" aria-label="TikTok" style="width:52px; height:52px;">
+        <svg viewBox="0 0 24 24" style="width:22px; height:22px;"><path d="M16.6 2h-3.2v13.4a2.9 2.9 0 1 1-2.05-2.77V9.3a6.1 6.1 0 1 0 5.25 6.05V8.66a7.6 7.6 0 0 0 4.4 1.4V6.8a4.3 4.3 0 0 1-4.4-4.4Z"/></svg>
+      </a>
+      <a class="social-btn" href="https://pinterest.com/fieldwork" target="_blank" rel="noopener" aria-label="Pinterest" style="width:52px; height:52px;">
+        <svg viewBox="0 0 24 24" style="width:22px; height:22px;"><path d="M12 2a10 10 0 0 0-3.64 19.31c-.05-.82-.09-2.08.02-2.98.1-.8.66-5.1.66-5.1s-.17-.34-.17-.83c0-.78.45-1.36 1.02-1.36.48 0 .71.36.71.79 0 .48-.31 1.2-.46 1.87-.13.56.28 1.02.83 1.02 1 0 1.77-1.05 1.77-2.58 0-1.35-.97-2.29-2.35-2.29-1.6 0-2.54 1.2-2.54 2.44 0 .48.19.99.42 1.27a.17.17 0 0 1 .04.16c-.05.2-.15.6-.17.68-.03.1-.09.13-.2.08-.75-.35-1.22-1.45-1.22-2.33 0-1.9 1.38-3.64 3.98-3.64 2.09 0 3.71 1.49 3.71 3.48 0 2.08-1.31 3.75-3.13 3.75-.61 0-1.19-.32-1.38-.7l-.38 1.43c-.14.53-.51 1.2-.76 1.6A10 10 0 1 0 12 2Z"/></svg>
+      </a>
+      <a class="social-btn" href="https://facebook.com/fieldwork" target="_blank" rel="noopener" aria-label="Facebook" style="width:52px; height:52px;">
+        <svg viewBox="0 0 24 24" style="width:22px; height:22px;"><path d="M13.5 21v-7.5h2.5l.4-3H13.5V8.4c0-.87.24-1.46 1.5-1.46h1.6V4.3C16.3 4.24 15.3 4.14 14.14 4.14c-2.3 0-3.87 1.4-3.87 3.98v2.38H7.75v3h2.52V21h3.23Z"/></svg>
+      </a>
+      <a class="social-btn" href="https://x.com/fieldwork" target="_blank" rel="noopener" aria-label="X (Twitter)" style="width:52px; height:52px;">
+        <svg viewBox="0 0 24 24" style="width:22px; height:22px;"><path d="M3 3h4.4l4 5.4L16.2 3H21l-6.8 8.4L21.4 21h-4.4l-4.4-5.8L6.9 21H3l7.2-8.8L3 3Z"/></svg>
+      </a>
+      <a class="social-btn" href="https://youtube.com/@fieldwork" target="_blank" rel="noopener" aria-label="YouTube" style="width:52px; height:52px;">
+        <svg viewBox="0 0 24 24" style="width:22px; height:22px;"><path d="M21.6 7.2s-.21-1.5-.86-2.16c-.82-.87-1.74-.87-2.16-.92C15.6 4 12 4 12 4h-.01s-3.59 0-6.58.12c-.42.05-1.34.05-2.16.92C2.6 5.7 2.4 7.2 2.4 7.2S2.18 8.94 2.18 10.68v1.63c0 1.74.22 3.48.22 3.48s.2 1.5.85 2.16c.82.87 1.9.84 2.38.93 1.73.17 7.37.22 7.37.22s3.6-.01 6.59-.13c.42-.06 1.34-.06 2.16-.93.65-.66.86-2.16.86-2.16s.22-1.74.22-3.48v-1.63c0-1.74-.22-3.48-.22-3.48ZM9.98 14.6V8.8l5.6 2.9-5.6 2.9Z"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">FIELD<span>WORK</span></a>
+        <p>Durable, utilitarian clothing cut and sewn for people who work with their hands.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html#outerwear">Outerwear</a></li>
+          <li><a href="shop.html#workwear">Workwear</a></li>
+          <li><a href="shop.html#accessories">Accessories</a></li>
+          <li><a href="shop.html">All products</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="contact.html#faq">Sizing &amp; fit</a></li>
+          <li><a href="contact.html#faq">Shipping &amp; returns</a></li>
+          <li><a href="contact.html#faq">Repairs</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="contact.html">Our story</a></li>
+          <li><a href="contact.html#visit">Visit a store</a></li>
+          <li><a href="index.html">Wholesale</a></li>
+          <li><a href="index.html">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 FIELDWORK Goods Co. All rights reserved.</span>
+      <span><a href="#">Privacy</a> · <a href="#">Terms</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

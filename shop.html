@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop — FIELDWORK</title>
+<meta name="description" content="Shop FIELDWORK outerwear, workwear and accessories — durable clothing built for daily use.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-row wrap">
+    <a href="index.html" class="logo">FIELD<span>WORK</span></a>
+    <nav class="main-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="shop.html" aria-current="page">Shop</a>
+      <a href="contact.html">About &amp; Contact</a>
+    </nav>
+    <div class="header-actions">
+      <span aria-label="Items in bag" style="display:flex; align-items:center; gap:8px; font-family:'JetBrains Mono',monospace; font-size:0.8rem;">
+        BAG <span class="bag-count">0</span>
+      </span>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section style="padding-bottom:0;">
+  <div class="wrap">
+    <div class="eyebrow">Full catalog</div>
+    <h1 style="font-size:clamp(2rem,4vw,3rem); margin-bottom:10px;">Shop FIELDWORK</h1>
+    <p style="max-width:60ch; color:#3a382f;">Nine core pieces, cut in small batches from canvas, waxed cotton and ripstop. Every style ships with a repair card — send it back when it wears out and we'll fix it, not replace it.</p>
+  </div>
+</section>
+
+<section id="catalog">
+  <div class="wrap">
+    <div class="filter-row" role="group" aria-label="Filter products by category">
+      <button class="filter-chip" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter-chip" data-filter="outerwear" aria-pressed="false">Outerwear</button>
+      <button class="filter-chip" data-filter="workwear" aria-pressed="false">Workwear</button>
+      <button class="filter-chip" data-filter="accessories" aria-pressed="false">Accessories</button>
+    </div>
+
+    <div class="product-grid" id="outerwear">
+
+      <div class="tag-card" data-category="outerwear">
+        <div class="string"></div><div class="punch"></div>
+        <div class="tag-body">
+          <div class="tag-media"><img src="https://picsum.photos/seed/fw-jacket-1/400/500" alt="Waxed Field Jacket, rust colorway"></div>
+          <div class="tag-cat">Outerwear</div>
+          <div class="tag-name">Waxed Field Jacket</div>
+          <div class="tag-row"><span class="tag-price mono">$228.00</span><button class="tag-add">Add to bag</button></div>
+        </div>
+      </div>
+
+      <div class="tag-card" data-category="outerwear">
+        <div class="string"></div><div class="punch"></div>
+        <div class="tag-body">
+          <div class="tag-media"><img src="https://picsum.photos/seed/fw-jacket-2/400/500" alt="Ripstop Shell Anorak, olive"></div>
+          <div class="tag-cat">Outerwear</div>
+          <div class="tag-name">Ripstop Shell Anorak</div>
+          <div class="tag-row"><span class="tag-price mono">$186.00</span><button class="tag-add">Add to bag</button></div>
+        </div>
+      </div>
+
+      <div class="tag-card" data-category="outerwear">
+        <div class="string"></div><div class="punch"></div>
+        <div class="tag-body">
+          <div class="tag-media"><img src="https://picsum.photos/seed/fw-jacket-3/400/500" alt="Lined Chore Coat, black"></div>
+          <div class="tag-cat">Outerwear</div>
+          <div class="tag-name">Lined Chore Coat</div>
+          <div class="tag-row"><span class="tag-price mono">$205.00</span><button class="tag-add">Add to bag</button></div>
+        </div>
+      </div>
+
+      <div class="tag-card" data-category="workwear" id="workwear">
+        <div class="string"></div><div class="punch"></div>
+        <div class="tag-body">
+          <div class="tag-media"><img src="https://picsum.photos/seed/fw-pant-1/400/500" alt="Reinforced Canvas Pant, khaki"></div>
+          <div class="tag-cat">Workwear</div>
+          <div class="tag-name">Reinforced Canvas Pant</div>
+          <div class="tag-row"><span class="tag-price mono">$118.00</span><button class="tag-add">Add to bag</button></div>
+        </div>
+      </div>
+
+      <div class="tag-card" data-category="workwear">
+        <div class="string"></div><div class="punch"></div>
+        <div class="tag-body">
+          <div class="tag-media"><img src="https://picsum.photos/seed/fw-shirt-1/400/500" alt="Heavyweight Overshirt, plaid"></div>
+          <div class="tag-cat">Workwear</div>
+          <div class="tag-name">Heavyweight Overshirt</div>
+          <div class="tag-row"><span class="tag-price mono">$96.00</span><button class="tag-add">Add to bag</button></div>
+        </div>
+      </div>
+
+      <div class="tag-card" data-category="workwear">
+        <div class="string"></div><div class="punch"></div>
+        <div class="tag-body">
+          <div class="tag-media"><img src="https://picsum.photos/seed/fw-coverall-1/400/500" alt="Bib Overalls, denim"></div>
+          <div class="tag-cat">Workwear</div>
+          <div class="tag-name">Duck Canvas Bib Overalls</div>
+          <div class="tag-row"><span class="tag-price mono">$142.00</span><button class="tag-add">Add to bag</button></div>
+        </div>
+      </div>
+
+      <div class="tag-card" data-category="accessories" id="accessories">
+        <div class="string"></div><div class="punch"></div>
+        <div class="tag-body">
+          <div class="tag-media"><img src="https://picsum.photos/seed/fw-belt-1/400/500" alt="Full-Grain Tool Belt, brown"></div>
+          <div class="tag-cat">Accessories</div>
+          <div class="tag-name">Full-Grain Tool Belt</div>
+          <div class="tag-row"><span class="tag-price mono">$64.00</span><button class="tag-add">Add to bag</button></div>
+        </div>
+      </div>
+
+      <div class="tag-card" data-category="accessories">
+        <div class="string"></div><div class="punch"></div>
+        <div class="tag-body">
+          <div class="tag-media"><img src="https://picsum.photos/seed/fw-cap-1/400/500" alt="Waxed Canvas Cap, navy"></div>
+          <div class="tag-cat">Accessories</div>
+          <div class="tag-name">Waxed Canvas Cap</div>
+          <div class="tag-row"><span class="tag-price mono">$38.00</span><button class="tag-add">Add to bag</button></div>
+        </div>
+      </div>
+
+      <div class="tag-card" data-category="accessories">
+        <div class="string"></div><div class="punch"></div>
+        <div class="tag-body">
+          <div class="tag-media"><img src="https://picsum.photos/seed/fw-bag-1/400/500" alt="Canvas Tool Roll bag"></div>
+          <div class="tag-cat">Accessories</div>
+          <div class="tag-name">Canvas Tool Roll</div>
+          <div class="tag-row"><span class="tag-price mono">$52.00</span><button class="tag-add">Add to bag</button></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="newsletter">
+  <div class="wrap">
+    <div>
+      <h2>Restock alerts, straight up</h2>
+      <p>Tell us your size once — we'll ping you when it's back.</p>
+    </div>
+    <div>
+      <form class="n-form">
+        <label class="visually-hidden" for="nl-email-shop">Email address</label>
+        <input id="nl-email-shop" type="email" placeholder="you@email.com" required>
+        <button type="submit">Notify me</button>
+      </form>
+      <div class="n-note">No spam. Read our <a href="contact.html" style="color:#c9c6bd;">privacy note</a>.</div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">FIELD<span>WORK</span></a>
+        <p>Durable, utilitarian clothing cut and sewn for people who work with their hands.</p>
+        <div class="social-row" aria-label="Follow FIELDWORK on social media">
+          <a class="social-btn" href="https://instagram.com/fieldwork" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.25.06 2.1.25 2.85.55.77.3 1.42.7 2.06 1.34.64.64 1.04 1.29 1.34 2.06.3.75.49 1.6.55 2.85.07 1.25.07 1.65.07 4.85s0 3.6-.07 4.85c-.06 1.25-.25 2.1-.55 2.85-.3.77-.7 1.42-1.34 2.06a5.5 5.5 0 0 1-2.06 1.34c-.75.3-1.6.49-2.85.55-1.25.07-1.65.07-4.85.07s-3.6 0-4.85-.07c-1.25-.06-2.1-.25-2.85-.55a5.5 5.5 0 0 1-2.06-1.34 5.5 5.5 0 0 1-1.34-2.06c-.3-.75-.49-1.6-.55-2.85C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.85c.06-1.25.25-2.1.55-2.85.3-.77.7-1.42 1.34-2.06A5.5 5.5 0 0 1 6.22 .9c.75-.3 1.6-.49 2.85-.55C10.32 2.2 10.8 2.2 12 2.2Zm0 1.8c-3.15 0-3.52 0-4.76.07-1.02.05-1.58.22-1.95.36-.49.19-.84.42-1.2.79-.37.36-.6.71-.79 1.2-.14.37-.31.93-.36 1.95C2.87 9.61 2.87 9.98 2.87 13.13m0 0V12m9.13-6.8a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 1.8a3.2 3.2 0 1 1 0 6.4 3.2 3.2 0 0 1 0-6.4Zm5.2-1.98a1.17 1.17 0 1 1 0 2.34 1.17 1.17 0 0 1 0-2.34Z"/></svg>
+          </a>
+          <a class="social-btn" href="https://tiktok.com/@fieldwork" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg viewBox="0 0 24 24"><path d="M16.6 2h-3.2v13.4a2.9 2.9 0 1 1-2.05-2.77V9.3a6.1 6.1 0 1 0 5.25 6.05V8.66a7.6 7.6 0 0 0 4.4 1.4V6.8a4.3 4.3 0 0 1-4.4-4.4Z"/></svg>
+          </a>
+          <a class="social-btn" href="https://pinterest.com/fieldwork" target="_blank" rel="noopener" aria-label="Pinterest">
+            <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.64 19.31c-.05-.82-.09-2.08.02-2.98.1-.8.66-5.1.66-5.1s-.17-.34-.17-.83c0-.78.45-1.36 1.02-1.36.48 0 .71.36.71.79 0 .48-.31 1.2-.46 1.87-.13.56.28 1.02.83 1.02 1 0 1.77-1.05 1.77-2.58 0-1.35-.97-2.29-2.35-2.29-1.6 0-2.54 1.2-2.54 2.44 0 .48.19.99.42 1.27a.17.17 0 0 1 .04.16c-.05.2-.15.6-.17.68-.03.1-.09.13-.2.08-.75-.35-1.22-1.45-1.22-2.33 0-1.9 1.38-3.64 3.98-3.64 2.09 0 3.71 1.49 3.71 3.48 0 2.08-1.31 3.75-3.13 3.75-.61 0-1.19-.32-1.38-.7l-.38 1.43c-.14.53-.51 1.2-.76 1.6A10 10 0 1 0 12 2Z"/></svg>
+          </a>
+          <a class="social-btn" href="https://facebook.com/fieldwork" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M13.5 21v-7.5h2.5l.4-3H13.5V8.4c0-.87.24-1.46 1.5-1.46h1.6V4.3C16.3 4.24 15.3 4.14 14.14 4.14c-2.3 0-3.87 1.4-3.87 3.98v2.38H7.75v3h2.52V21h3.23Z"/></svg>
+          </a>
+          <a class="social-btn" href="https://x.com/fieldwork" target="_blank" rel="noopener" aria-label="X (Twitter)">
+            <svg viewBox="0 0 24 24"><path d="M3 3h4.4l4 5.4L16.2 3H21l-6.8 8.4L21.4 21h-4.4l-4.4-5.8L6.9 21H3l7.2-8.8L3 3Z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html#outerwear">Outerwear</a></li>
+          <li><a href="shop.html#workwear">Workwear</a></li>
+          <li><a href="shop.html#accessories">Accessories</a></li>
+          <li><a href="shop.html">All products</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="contact.html#faq">Sizing &amp; fit</a></li>
+          <li><a href="contact.html#faq">Shipping &amp; returns</a></li>
+          <li><a href="contact.html#faq">Repairs</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="contact.html">Our story</a></li>
+          <li><a href="contact.html#visit">Visit a store</a></li>
+          <li><a href="index.html">Wholesale</a></li>
+          <li><a href="index.html">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 FIELDWORK Goods Co. All rights reserved.</span>
+      <span><a href="#">Privacy</a> · <a href="#">Terms</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
